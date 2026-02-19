@@ -37,7 +37,7 @@
         "dev": "./node_modules/.bin/tsup --watch",
         "clean": "rm -rf dist",
         "prepare": "npm run clean && npm run build",
-        "deploy": "npm pack && npm version patch && npm publish --access public",
+        "release": "npm pack && npm version patch && npm publish --access public",
         "deploy:actions": "npm version patch && git push --follow-tags"
     },
     "peerDependencies": {
