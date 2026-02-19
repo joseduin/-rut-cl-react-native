@@ -20,9 +20,6 @@ Componentes y hooks de React Native para la validación y formateo de RUT chilen
 | ![ezgif-250d539470b1607d](https://github.com/user-attachments/assets/f434be5b-2492-4e62-bbb8-95dd5883619d)   | ![ezgif-2965da5cf226d548](https://github.com/user-attachments/assets/9f019fe2-d508-4555-bc57-f5427972cb26) |
 
 
-
-
-
 ---
 
 🇪🇸 Español | [🇺🇸 English](./README.en.md)
@@ -34,7 +31,6 @@ Componentes y hooks de React Native para la validación y formateo de RUT chilen
 ```bash
 npm install @rut-cl/react-native
 ```
-> **Nota**: `rut-cl` es una dependencia necesaria y debe estar instalada.
 
 ---
 
@@ -55,9 +51,9 @@ const MyComponent = () => {
     <RutInput
       value={rut}
       onChangeText={setRut}
-      onChangeRut={(data) => {
-        console.log(data.isValid); // true/false
-        console.log(data.clean);   // '123456785'
+      onChangeRut={({ raw, clean, formatted, isValid }) => {
+        console.log(isValid); // true/false
+        console.log(clean);   // '123456785'
       }}
       placeholder="12.345.678-5"
       // ... acepta todas las props de TextInput
