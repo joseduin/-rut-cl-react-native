@@ -15,6 +15,14 @@ Componentes y hooks de React Native para la validación y formateo de RUT chilen
 * ✅ Soporte completo para TypeScript.
 * ✅ Ultra liviano y optimizado para móviles.
 
+| RUT Personas |  RUT Empresas |
+|:-----|:--------:|
+| ![ezgif-250d539470b1607d](https://github.com/user-attachments/assets/f434be5b-2492-4e62-bbb8-95dd5883619d)   | ![ezgif-2965da5cf226d548](https://github.com/user-attachments/assets/9f019fe2-d508-4555-bc57-f5427972cb26) |
+
+
+
+
+
 ---
 
 🇪🇸 Español | [🇺🇸 English](./README.en.md)
