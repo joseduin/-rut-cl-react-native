@@ -1,0 +1,61 @@
+{
+    "name": "@rut-cl/react-native",
+    "version": "0.1.4",
+    "description": "🇨🇱 React Native utilities and input component for Chilean RUT validation powered by rut-cl.",
+    "license": "MIT",
+    "author": "Jose Duin",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/joseduin/rut-cl"
+    },
+    "homepage": "https://github.com/joseduin/rut-cl",
+    "keywords": [
+        "rut",
+        "chile",
+        "react-native",
+        "validation",
+        "rut-cl"
+    ],
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "react-native": "./dist/index.mjs",
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "react-native": "./dist/index.mjs",
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "./node_modules/.bin/tsup",
+        "dev": "./node_modules/.bin/tsup --watch",
+        "clean": "rm -rf dist",
+        "prepare": "npm run clean && npm run build",
+        "deploy": "npm pack && npm version patch && npm publish --access public",
+        "deploy:actions": "npm version patch && git push --follow-tags"
+    },
+    "peerDependencies": {
+        "react": ">=18",
+        "react-native": ">=0.70"
+    },
+    "dependencies": {
+        "rut-cl": "^1.0.1"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.0",
+        "@types/react-native": "^0.73.0",
+        "react": "^19.1.0",
+        "react-native": "^0.80.3",
+        "tsup": "^8.0.0",
+        "typescript": "^5.0.0"
+    },
+    "overrides": {
+        "minimatch": "10.2.1"
+    }
+}
