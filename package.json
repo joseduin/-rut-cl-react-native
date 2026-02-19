@@ -1,6 +1,6 @@
 {
     "name": "@rut-cl/react-native",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "🇨🇱 React Native utilities and input component for Chilean RUT validation powered by rut-cl.",
     "license": "MIT",
     "author": "Jose Duin",
