@@ -6,9 +6,9 @@
     "author": "Jose Duin",
     "repository": {
         "type": "git",
-        "url": "https://github.com/joseduin/rut-cl"
+        "url": "https://github.com/joseduin/rut-cl-react-native"
     },
-    "homepage": "https://github.com/joseduin/rut-cl",
+    "homepage": "https://github.com/joseduin/rut-cl-react-native",
     "keywords": [
         "rut",
         "chile",
